@@ -26,6 +26,11 @@ spec:
         repoURL: https://github.com/codefresh-contrib/gitops-cert-level-2-examples.git
         targetRevision: HEAD
         path: '{{path}}'
+      syncPolicy:
+        automated: {}
+        selfHeal: true
+        syncOptions:  
+          - CreateNamespace=true 
       destination:
         server: '{{server}}'
         namespace: '{{path.basename}}'
