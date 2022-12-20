@@ -10,7 +10,7 @@ spec:
       - name: webserver-simple
         env:
         - name: ENV
-          value: "qa"
+          value: "staging"
         - name: GPU_ENABLED
-          value: "0"
+          value: "1"
       
